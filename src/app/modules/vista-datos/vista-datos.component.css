@@ -1,0 +1,132 @@
+
+iframe {
+    width: 1116px;
+    height: 720px;
+  
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  button {
+    background-color: transparent;
+      position: absolute;
+      width: 250px;
+      right: 40%;
+      height: 90px;;
+      bottom: 50%;
+      border: 1px solid transparent;
+      font-size: 15px;
+      color: rgb(255, 0, 0);
+      
+      font-weight: bold;
+  }
+  
+  .card-effect:hover .card {
+    clip-path: polygon(
+        50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%
+    );
+  }
+  
+  .card {
+    transition-duration: 0.9s;
+    clip-path: polygon(
+      11% 0,
+      100% 0,
+      100% 50%,
+      100% 100%,
+      50% 100%,
+      0 100%,
+      0 50%,
+      0 0
+    );
+  }
+  
+  .card-effect:hover .card-img-overlay {
+    transform: scale(0.9);
+  }
+  
+  .card-img-overlay {
+    transition-duration: 0.4s;
+  }
+  
+  .card-img-filter {
+    filter: brightness(0.5);
+  }
+  
+  #main-header {
+    background: black;
+    color: white;
+    height: 80px;
+  }	
+    #main-header a {
+      color: white;
+    }
+  
+  /*
+   * Logo
+   */
+  #logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+  }
+    #logo-header:hover {
+      color: #0b76a6;
+    }
+    
+    #logo-header .site-name {
+      display: block;
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+    
+    #logo-header .site-desc {
+      display: block;
+      font-weight: 300;
+      font-size: 0.8em;
+      color: rgb(0, 0, 0);
+    }
+    
+  
+  /*
+   * Navegación
+   */
+  nav {
+    float: right;
+  }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding-right: 20px;
+    }
+    
+      nav ul li {
+        display: inline-block;
+        line-height: 80px;
+      }
+        
+        nav ul li a {
+          display: block;
+          padding: 0 10px;
+          text-decoration: none;
+        }
+        
+          nav ul li a:hover {
+            background: #0b76a6;
+          }
+  
+  
+  #main-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+  }
+  
+    #main-content header,
+    #main-content .content {
+      padding: 40px;
+    }
